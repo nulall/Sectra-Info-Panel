@@ -5,4 +5,4 @@ I stole the idea from [Sectra Info Panel Links](https://github.com/egeekial/sect
 
 Another similar project for those who are interested: [Sectra-pacs-infopanel](https://github.com/profumds/Sectra-pacs-infopanel/)
 
-Icons have been used from (https://icons.getbootstrap.com/) and (https://healthicons.org/)
+Icons have been used from [Bootstrap](https://icons.getbootstrap.com/) and [Health icons](https://healthicons.org/)
