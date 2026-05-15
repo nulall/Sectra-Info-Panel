@@ -1,0 +1,130 @@
+{
+  "header": "Your Radiology Dept",
+  "topLinks": [
+    {
+      "href": "https://yourdepartmenthomepage.com",
+      "icon": { "type": "bootstrap", "name": "house-fill" },
+      "text": "Department Webpage"
+    }
+  ],
+  "sections": [
+    {
+      "id": "contacts",
+      "title": "Contacts & Schedules",
+      "links": [
+        {
+          "href": "https://qgenda.com/",
+          "icon": { "type": "img", "src": "QGenda.png", "alt": "QGenda Schedule Icon" },
+          "text": "Radiology Schedule"
+        },
+        {
+          "href": "https://contactslists.com",
+          "icon": { "type": "img", "src": "Contact-Lists.png", "alt": "Contact Lists Icon" },
+          "text": "Contact Lists"
+        },
+        {
+          "href": "file:///P:/Radiology/Tipsheets%20for%20Dashboards/Radiology%20Tech%20Call%20Schedule%20Contact%20Numbers.pdf",
+          "icon": { "type": "img", "src": "Techs-On-Call.png", "alt": "Techs on Call Icon" },
+          "text": "Rad Techs on Call"
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "title": "Body",
+      "links": [
+        {
+          "href": "https://peerlearning.com",
+          "icon": { "type": "bootstrap", "name": "mortarboard-fill" },
+          "text": "Peer Learning"
+        },
+        {
+          "href": "Atlas of Normal Roentgen Variants That May Simulate Disease - Keats, Anderson (2012).pdf",
+          "icon": { "type": "img", "src": "xray.png", "alt": "Keats Icon" },
+          "text": "Keats Atlas of XR Variants"
+        },
+        {
+          "href": "file:///P:/Radiology/bone%20age%20calculator/index.html",
+          "icon": { "type": "img", "src": "Bone-Age-Calculator.png", "alt": "Bone Age Calculator Icon" },
+          "text": "Bone Age"
+        },
+        {
+          "href": "https://YourMRIprotocols.com",
+          "icon": { "type": "img", "src": "magnet.png", "alt": "Magnet Icon" },
+          "text": "MRI Protocols"
+        }
+      ]
+    },
+    {
+      "id": "neuro",
+      "title": "Neuro",
+      "links": [
+        {
+          "href": "https://peerlearning.com",
+          "icon": { "type": "bootstrap", "name": "mortarboard-fill" },
+          "text": "Peer Learning"
+        },
+        {
+          "href": "https://YourMRIprotocols.com",
+          "icon": { "type": "img", "src": "magnet.png", "alt": "Magnet Icon" },
+          "text": "MRI Protocols"
+        }
+      ]
+    },
+    {
+      "id": "IS",
+      "title": "IS",
+      "links": [
+        {
+          "href": "https://TicketEntry.com",
+          "icon": { "type": "bootstrap", "name": "tools" },
+          "text": "Something Broken"
+        },
+        {
+          "href": "https://TicketEntry.com",
+          "icon": { "type": "bootstrap", "name": "clipboard-plus-fill" },
+          "text": "New Request"
+        }
+      ]
+    },
+    {
+      "id": "Remote Sites",
+      "title": "Affiliated Sites",
+      "links": [
+        {
+          "href": "https://citrix.com",
+          "icon": { "type": "bootstrap", "name": "globe" },
+          "text": "Citrix"
+        },
+        {
+          "href": "https://citrix.com",
+          "icon": { "type": "bootstrap", "name": "globe2" },
+          "text": "VPN"
+        }
+      ]
+    },
+    {
+      "id": "DA",
+      "title": "Data & Analytics",
+      "links": [
+        {
+          "href": "https://EpicSlicerDicerLink",
+          "icon": { "type": "img", "src": "SlicerDicer.png", "alt": "SlicerDicer Icon" },
+          "text": "SlicerDicer"
+        },
+        {
+          "href": "https://nuancempower.com/",
+          "icon": { "type": "img", "src": "mPower.png", "alt": "mPower Icon" },
+          "text": "mPower"
+        }
+      ]
+    }
+  ],
+  "bottomLinks": [
+    {
+      "href": "https://otherlinksatthebottom.com",
+      "icon": { "type": "bootstrap", "name": "robot" },
+      "text": "Additional Miscellany"
+    }
+  ]
+}

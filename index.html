@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+</head>
+<body>
+
+    <div class="fixed-header">
+        <div class="item" id="header-title"></div>
+        <div class="close-button" onclick="window.location.href='close.html'">&#10006;</div>
+    </div>
+
+    <div class="content" id="nav-content"></div>
+
+    <script>
+    function buildIcon(icon) {
+        if (icon.type === 'img') {
+            return `<img class="nav-icon" src="${icon.src}" alt="${icon.alt || ''}">`;
+        }
+        if (icon.type === 'bootstrap') {
+            return `<i class="bi bi-${icon.name}"></i>`;
+        }
+        return '';
+    }
+
+    function buildLink(link) {
+        return `<a href="${link.href}" target="_blank">${buildIcon(link.icon)}${link.text}</a>`;
+    }
+
+    function buildSection(section, index) {
+        const id = `${section.id}-toggle`;
+        const links = section.links.map(buildLink).join('\n            ');
+        return `
+        <input type="checkbox" id="${id}" class="toggle-checkbox">
+        <label for="${id}" class="toggle-label">
+            <span class="arrow-icon"></span>${section.title}
+        </label>
+        <div class="toggle-content">
+            ${links}
+        </div>`;
+    }
+
+    fetch('nav.json')
+        .then(r => r.json())
+        .then(nav => {
+            document.getElementById('header-title').textContent = nav.header;
+
+            const content = document.getElementById('nav-content');
+            let html = '';
+
+            (nav.topLinks || []).forEach(link => {
+                html += buildLink(link) + '\n';
+            });
+
+            (nav.sections || []).forEach((section, i) => {
+                html += buildSection(section, i);
+            });
+
+            (nav.bottomLinks || []).forEach(link => {
+                html += buildLink(link) + '\n';
+            });
+
+            content.innerHTML = html;
+        })
+        .catch(err => {
+            document.getElementById('nav-content').textContent = 'Failed to load nav.json: ' + err.message;
+        });
+    </script>
+
+</body>
+</html>
