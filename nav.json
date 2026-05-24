@@ -125,16 +125,6 @@
       "href": "https://otherlinksatthebottom.com",
       "icon": { "type": "bootstrap", "name": "robot" },
       "text": "Additional Miscellany"
-    },
-    {
-      "href": "https://otherlinksatthebottom.com",
-      "icon": { "type": "bootstrap", "name": "chevron-right" },
-      "text": "Test Icon"
-    },
-    {
-      "href": "https://otherlinksatthebottom.com",
-      "icon": { "type": "bootstrap", "name": "chevron-down" },
-      "text": "Test Icon"
     }
   ]
 }
